@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/all.css">
+        <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../plugins/fontawesome/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <div class="flex-dashboard">
+            <sidebar>
+                <div class="sidebar-title">
+                    <h2>Junk Machine</h2>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li> <i class="fas fa-home"></i> <a href="dashboardjulyan.html"> Dashboard</a></li>
+                        <li> <i class="fas fa-user"></i> <a href="perfiljulyan.html"> Perfil</a></li>
+                        <li> <i class="fas fa-code-branch"></i> <a href="procedimentosjulyan.html"> Serviços</a></li>
+                        <li> <i class="fas fa-folder-open"></i> <a href="solicitacaojulyan.html"> Solicitações</a></li>
+                        <li> <i class="fas fa-keyboard"></i> <a href="cadservicosjulyan.html"> Cadastrar Serviços</a></li>
+                    </ul>
+                </div>
+            </sidebar>
+
+            <main>
+                <div class="xh">
+                <header class="header1">
+                    <a href="#" style="text-decoration: none; font-size: 18px;"> <i style="font-size: 22px;" class="fas fa-home"></i> Dashboard</a>
+                    <a href="../index.html" style="text-decoration: none; font-size: 18px;"> <i style="font-size: 22px;" class="fas fa-sign-out-alt"></i> Logout</a>
+                </header>
+                </div>
+
+                <!-- Top Navigation Menu -->
+                    <div class="topnav">
+                        <a href="../views/dashboard.html" class="active">Junk Machine</a>
+                        <!-- Navigation links (hidden by default) -->
+                        <div id="myLinks">
+                            <a href="dashboardjulyan.html"> <i class="fas fa-home"></i> Dashboard</a>
+                            <a href="perfiljulyan.html"> <i class="fas fa-user"></i> Perfil</a>
+                            <a href="procedimentosjulyan.html"> <i class="fas fa-code-branch"></i> Serviços</a>
+                            <a href="solicitacaojulyan.html"> <i class="fas fa-folder-open"></i> Solicitações</a>
+                            <a href="cadservicosjulyan.html"> <i class="fas fa-keyboard"></i> Cadastrar Serviços</a>
+                        </div>
+                        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                
+                <div class="main-content">
+                    <div class="panel2">
+                        <div class="sho-title">
+                            <h2>Perfil do Admin</h2>
+                        </div>
+                        <form>
+                            <div class="mb-3">
+                                <label for="nomep" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="nomep" readonly="true" placeholder="Julyan">
+                              </div>
+                            <div class="mb-3">
+                              <label for="emailp" class="form-label">Endereço de Email</label>
+                              <input type="text" class="form-control" id="emailp" readonly="true" placeholder="julyan@julyan.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailp" class="form-label">Senha</label>
+                                <input type="text" class="form-control" id="emailp" readonly="true" placeholder="**********">
+                              </div>
+                            <div class="mb-3">
+                                <label for="cityp" class="form-label">Localização</label>
+                                <input type="text" class="form-control" id="cityp" readonly="true" placeholder="Night City">
+                            </div>
+
+                            <button class="cybr3" style="color: white; background-color: black;"> 
+                                _Salvar<span aria-hidden>_</span>
+                                <span aria-hidden class="cybr3__glitch">Salvar_</span>
+                                <span aria-hidden class="cybr3__tag">R25</span>
+                            </button>
+        
+                          </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../plugins/fontawesome/js/all.min.js"></script>
+        <script src="../js/backgroundslide.js"></script>
+        <script src="../js/botaomobile.js"></script>
+        <script src="../js/vanilla-tilt.min.js"></script>
+        <script src="../js/effectvanilla.js"></script>
+    </body>
+</html>

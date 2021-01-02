@@ -1,0 +1,122 @@
+.flex-dashboard{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+sidebar{
+    display: block;
+    height: 100%;
+    width: 300px;
+
+    backdrop-filter: Blur(10px);
+
+    /*    border: 1px solid rgba(0, 0, 0, .0625); */
+    border-top: 0px;
+}
+
+sidebar .sidebar-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    height: 90px;
+
+    /*    border: 1px solid rgba(0, 0, 0, .0625); */
+    border-right: 0px;
+
+    margin-top: 0px;
+
+    text-transform: uppercase;
+}
+
+sidebar .sidebar-title h2{
+    color:#FFFFFF;
+                        text-shadow:
+                           0px 0px 10px #FFFFFF,
+                           0px 0px 10px #FFFFFF,
+                           0px 0px 10px #FFFFFF;
+} 
+
+.menu{
+    /*    border: 1px solid rgba(0, 0, 0, .0625); */
+}
+
+.menu-mobile{
+    position: absolute;
+    width: Calc(100vw - 20px);
+    height: Calc(100vh - 20px);
+
+    top: 10;
+    left: 10;
+
+    background-color: red;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+.menu ul,
+.menu-mobile ul{
+    padding: 0;
+    margin: 0;
+
+}
+
+.menu ul li,
+.menu-mobile ul li{
+    text-decoration: none;
+    list-style: none;
+
+    padding: 20px 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+        border: 1px solid rgba(0, 0, 0, .0625); 
+}
+
+.menu ul li a,
+.menu-mobile ul li a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: black;
+
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu ul li:hover,
+.menu-mobile ul li:hover{
+    transition: 0.2s;
+    background-color: black;
+}
+
+.menu ul li:hover a,
+.menu-mobile ul li:hover a{
+    transition: 0.2s;
+    color: white;
+}
+
+.menu ul li:hover svg,
+.menu-mobile ul li:hover svg{
+    transition: 0.2s;
+    color: white;
+}
+
+.menu ul li svg,
+.menu-mobile ul li svg{
+    color: black;
+    font-size: 22px;
+}
+
+
+

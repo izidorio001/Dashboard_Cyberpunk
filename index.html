@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="plugins/fontawesome/css/fontawesome.min.css">
+        <title>Dashboard</title>
+    </head>
+    <body>
+            <div class="login">
+                <div class="login-form">
+                    <div class="login-form-wrapper">
+                        <div class="login-title">
+                            <h2>Login</h2>
+                            <a href="views/register.html">Cadastrar-se</a>
+                        </div>
+                        <form>
+                            <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Digite o seu email">
+                            </div>
+                            <div class="mb-3">
+                            <label for="senha" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="senha" placeholder="Digite a sua senha">
+                            </div>
+                            <div>
+                                <button class="cybr1" onclick="loginjulyan();return false">
+                                        Julyan<span aria-hidden>_</span>
+                                        <span aria-hidden class="cybr1__glitch">Julyan_</span>
+                                        <span aria-hidden class="cybr1__tag">R25</span>
+                                </button>
+                                <button class="cybr2" onclick="logincliente();return false" >
+                                    Cliente<span aria-hidden>_</span>
+                                    <span aria-hidden class="cybr2__glitch">Cliente_</span>
+                                    <span aria-hidden class="cybr2__tag">R25</span>
+                                </button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+           <!-- <div class="banner-login">
+                    <div class="samurai">
+                       <a href="views/dashboard.html"> <img src="images/samurai.png" alt="logo">  </a>  
+                    </div>
+                </div>-->
+            </div>
+
+        <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="plugins/fontawesome/js/all.min.js"></script>
+        <script type="text/javascript">
+
+            function logincliente(){
+                var button = document.getElementsByClassName('form button.cybr1');
+
+                return location.href = 'views/dashboard.html';
+            }
+
+            function loginjulyan(){
+                var button = document.getElementsByClassName('form button.cybr2');
+
+                return location.href = 'views/dashboardjulyan.html'
+            }
+
+        </script>
+    </body>
+</html>
