@@ -146,16 +146,19 @@ main .main-content{
 
    .sho-title{
        padding-top: 20px;
+       text-align: center;
    }
 
    .sho-title h2{
        color: black;
+       font-weight: bold;
        text-transform: uppercase;
    }
 
 .sho-items{
     display: grid;
     grid-template-columns: 400px 400px;
+    padding: 10px;
 }
 
 
@@ -170,6 +173,8 @@ main .main-content{
     background-color: #0f0f0f;
     border-radius: 20px;
     transform-style: preserve-3d;
+
+    padding: 10px;
 
 }
 
@@ -281,13 +286,10 @@ main .main-content{
 .buttoncadser{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-.buttoncadser button:last-child{
-    margin-left: 20px;
-}
 
 
 
@@ -335,9 +337,78 @@ main .main-content{
         width: 250px;
         height: 400px;
     }
+    .box .circle{
+        width: 150px;
+        height: 150px;
+    }
+    .box .product{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        max-width: 200px;
+    }
     .panel2 form{
         width: 100%;
     }
+    .cybr4{
+
+    }
+    .topnav a:first-child{
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+    }
+    main{
+        width: 100%;
+        height: Calc(100% - 33px);
+    }
+
+}
+
+@media screen and (max-width: 320px){
+    .bannerhome ul{
+        display: grid;
+        grid-template-columns: 90px 90px;
+    }
+    .banner ul li:first-child{
+        padding-left: 10px;
+    }
+    sidebar{
+        display: none;
+    }
+    main{
+        width: 100%;
+    }
+    main .xh{
+        display: none;
+    }
+    .topnav{
+        display: block;
+    }
+    .topnav a.icon {
+        background-color: black;
+        border-radius: 100%;
+        color: white;
+        display: block;
+        position: absolute;
+        right: 4;
+        top: 4;
+    }
+    #myLinks .done{
+          background-color: black;
+          color: white;
+    }
+    .sho-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        width: 210px;
+        height: 400px;
+    }
+   
 
     .topnav a:first-child{
         text-decoration: none;
@@ -348,10 +419,10 @@ main .main-content{
         width: 100%;
         height: Calc(100% - 33px);
     }
-   
-    
-  
-
-   
-
+    .buttoncadser{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
