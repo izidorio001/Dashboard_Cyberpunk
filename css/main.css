@@ -2,8 +2,6 @@ main{
     display: block;
     height: 100%;
     width: Calc(100% - 300px);
-
-    
 }
 
 main .main-content{
@@ -297,7 +295,10 @@ main .main-content{
 @media screen and (max-width: 650px){
     .bannerhome ul{
         display: grid;
-        grid-template-columns: 50px 50px;
+        grid-template-columns: 80px 80px;
+    }
+    .banner ul li:first-child{
+        padding-left: 10px;
     }
     sidebar{
         display: none;
@@ -332,9 +333,21 @@ main .main-content{
     }
     .box{
         width: 250px;
-        height: 300px;
+        height: 400px;
     }
-    
+    .panel2 form{
+        width: 100%;
+    }
+
+    .topnav a:first-child{
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+    }
+    main{
+        width: 100%;
+        height: Calc(100% - 33px);
+    }
    
     
   

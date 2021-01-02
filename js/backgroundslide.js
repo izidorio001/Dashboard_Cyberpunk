@@ -23,7 +23,7 @@ function startSlideShow()
 {
 if (document.body && imageCount > 0)
 {
-    document.body.style.transition = '2s';
+    document.body.style.transition = '3s';
     document.body.style.backgroundImage = "url("+images[currentImage]+")";    
     document.body.style.backgroundAttachment = "fixed";
     document.body.style.backgroundRepeat = "repeat";
